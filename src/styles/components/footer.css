@@ -1,0 +1,36 @@
+.main-footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 2rem 0 0;
+    margin-top: auto;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section h3, .footer-section h4 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }

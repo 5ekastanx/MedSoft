@@ -1,0 +1,54 @@
+:root {
+    --primary: #2A86FF;
+    --primary-dark: #1E5EB8;
+    --text: #2D3748;
+    --background: #F7FAFC;
+    --white: #FFFFFF;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui;
+    line-height: 1.6;
+    background-color: var(--background);
+    color: var(--text);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .button {
+    background: var(--primary);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .doctors-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .doctor-detail {
+      flex-direction: column;
+    }
+  }

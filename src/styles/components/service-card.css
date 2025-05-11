@@ -1,0 +1,104 @@
+.service-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.service-card:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.service-header {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-header:hover {
+  background-color: #f9f9f9;
+}
+
+.service-icon {
+  font-size: 1.8rem;
+  color: #4caf50;
+  margin-right: 20px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.service-title h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.service-title p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.expand-icon {
+  margin-left: auto;
+  color: #777;
+  transition: transform 0.3s ease;
+}
+
+.service-card.expanded .expand-icon {
+  transform: rotate(180deg);
+}
+
+.service-features {
+  padding: 0 25px 25px;
+  border-top: 1px solid #eee;
+  background-color: #f9f9f9;
+}
+
+.service-features ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.service-features li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.service-features li i {
+  color: #4caf50;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.btn-small {
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-small:hover {
+  background-color: #3d8b40;
+}
+
+/* Анимация раскрытия */
+.service-features {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.service-card.expanded .service-features {
+  max-height: 500px;
+  padding: 0 25px 25px;
+}

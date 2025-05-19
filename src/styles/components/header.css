@@ -1,21 +1,22 @@
 :root {
-  --primary-color: #1e88e5;
-  --primary-dark: #1565c0;
-  --secondary-color: #4caf50;
-  --text-light: #ffffff;
+  --primary-color: red;
+  --primary-dark: rgb(173, 8, 8);
+  --secondary-color: rgb(173, 8, 8);
+  --text-light: #333333;
   --text-dark: #333333;
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
 }
 .headerc{
-  height: 10vh;
+  height: 15vh;
 }
 .main-header {
   position: fixed;
+  height: 15vh;
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--primary-color);
+  background-color: #ffffff;
   color: var(--text-light);
   padding: 1rem 0;
   z-index: 1000;
@@ -25,7 +26,7 @@
 
 .main-header.scrolled {
   padding: 0.5rem 0;
-  background-color: rgba(30, 136, 229, 0.95);
+  background-color: #ffffff;
   backdrop-filter: blur(5px);
 }
 
@@ -102,19 +103,19 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--text-light);
   text-decoration: none;
   font-weight: 500;
+  color: #00de07;
   transition: var(--transition);
 }
 
 .phone-link:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: #333333;
 }
 
 .appointment-button {
-  background-color: var(--secondary-color);
-  color: var(--text-light);
+  background-color: #00de07;
+  color: #f0f0f0;
   border: none;
   border-radius: 50px;
   padding: 0.6rem 1.5rem;
@@ -125,7 +126,7 @@
 }
 
 .appointment-button:hover {
-  background-color: #3d8b40;
+  background-color: #28a52d;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }

@@ -4,6 +4,8 @@ import { HomePage } from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import DoctorsPage from './pages/DoctorsPage';
 import ContactPage from './pages/ContactPage';
+import { QuizPage } from './pages/Quiz';
+import { CoursePage } from './pages/Course';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './styles/main.css';
@@ -18,6 +20,8 @@ function App() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/doctors" element={<DoctorsPage />} />
             <Route path="/contacts" element={<ContactPage />} />
+            <Route path="/quiz" element={<QuizPage />} />
+            <Route path="/courses" element={<CoursePage />} />
           </Routes>
         </main>
         <Footer />

@@ -1,54 +1,131 @@
 .doctors-page {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
+  font-family: 'Inter', sans-serif;
+  color: #1e293b;
 }
 
 .doctors-hero {
-  background: url('../../assets/header.jpeg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: black;
+  background: linear-gradient(135deg, #1e88e5, #0d47a1);
+  color: white;
   padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.doctors-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.doctors-hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  font-weight: 700;
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 800;
 }
 
-.doctors-hero p {
+.subtitle {
   font-size: 1.2rem;
   opacity: 0.9;
-  max-width: 700px;
-  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+  color: #4fc3f7;
 }
 
 .doctors-list {
   padding: 80px 0;
-  background-color: #f5f5f5;
+  background: #f8fafc;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.section-icon {
+  color: #1e88e5;
+  font-size: 1.8rem;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .doctors-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
+  margin-bottom: 60px;
 }
 
-/* Адаптивность */
+.additional-info {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  color: #1e88e5;
+  margin-bottom: 20px;
+}
+
+.info-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
 @media (max-width: 768px) {
-  .doctors-hero {
-    padding: 70px 0;
+  .hero-content h1 {
+    font-size: 2.2rem;
   }
   
-  .doctors-hero h1 {
-    font-size: 2rem;
-  }
-  
-  .doctors-hero p {
-    font-size: 1rem;
+  .stats {
+    flex-direction: column;
+    gap: 20px;
   }
   
   .doctors-grid {

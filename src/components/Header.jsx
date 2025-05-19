@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes, FaUserMd, FaPhoneAlt } from 'react-icons/fa';
+import logo from '../assets/favicon.png'
 import '../styles/components/header.css';
 
 const Header = () => {
@@ -26,7 +27,7 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">
           <Link to="/">
-            <FaUserMd className="logo-icon" />
+          <img src={logo} width={74} height={74} alt="" />
             <span>MedSoft</span>
           </Link>
         </div>

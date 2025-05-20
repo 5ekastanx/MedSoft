@@ -1,10 +1,17 @@
-/* src/styles/pages/course.css */
-.course-page {
-  background: #f8fafc;
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --secondary: #10b981;
+  --accent: #f59e0b;
+  --dark: #1e293b;
+  --light: #f8fafc;
+  --gray: #64748b;
+  --danger: #ef4444;
+  --success: #10b981;
 }
 
 .course-header {
-  background: linear-gradient(135deg, #2563eb, #1e40af);
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: white;
   padding: 3rem 0;
 }
@@ -34,17 +41,20 @@
   display: flex;
   align-items: center;
   gap: 0.3rem;
+  color: #f1f5f9;
 }
 
 .course-level {
   background: rgba(255, 255, 255, 0.2);
   padding: 0.3rem 0.8rem;
   border-radius: 2rem;
+  color: #f1f5f9;
 }
 
 .course-header h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #f8fafc;
 }
 
 .course-description {
@@ -61,10 +71,12 @@
 }
 
 .course-lessons {
+  padding-top: 50px;
   flex: 2;
 }
 
 .course-sidebar {
+  padding-top: 120px;
   flex: 1;
 }
 
@@ -90,12 +102,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  color: #2563eb;
 }
 
 .lesson-info h3 {
   margin-bottom: 0.5rem;
+}
+
+.lesson-info h3 a{
+    text-decoration: none;
+  font-weight: bold;
+  color: #2563eb;
 }
 
 .lesson-meta {
@@ -169,7 +185,7 @@
   align-items: center;
   justify-content: center;
   padding: 0.8rem 1.8rem;
-  border-radius: 0.5rem;
+  border-radius: 15px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -178,6 +194,8 @@
 .btn-primary {
   background: #2563eb;
   color: white;
+  border: none;
+  height: 46px;
 }
 
 .btn-primary:hover {

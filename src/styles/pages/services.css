@@ -27,18 +27,18 @@
   font-weight: 800;
 }
 
-.stats {
+.stats3 {
   display: flex;
   justify-content: center;
   gap: 60px;
   margin-top: 50px;
 }
 
-.stat-item {
+.stat-item3 {
   text-align: center;
 }
 
-.stat-item span {
+.stat-item3 span {
   font-size: 2.5rem;
   font-weight: 700;
   display: block;
@@ -47,7 +47,6 @@
 
 .services-list {
   padding: 80px 0;
-  background: #f8fafc;
 }
 
 .section-header {
@@ -60,6 +59,7 @@
   margin-bottom: 15px;
 }
 
+  
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -100,7 +100,7 @@
     font-size: 2.2rem;
   }
   
-  .stats {
+  .stats3 {
     flex-direction: column;
     gap: 30px;
   }

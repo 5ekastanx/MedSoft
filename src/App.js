@@ -5,7 +5,8 @@ import ServicesPage from './pages/ServicesPage';
 import DoctorsPage from './pages/DoctorsPage';
 import ContactPage from './pages/ContactPage';
 import { QuizPage } from './pages/Quiz';
-import { CoursePage } from './pages/Course';
+import CoursePage from './pages/Courses';
+import {CourseDetail} from './pages/CourseDetail';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './styles/main.css';
@@ -22,6 +23,7 @@ function App() {
             <Route path="/contacts" element={<ContactPage />} />
             <Route path="/quiz" element={<QuizPage />} />
             <Route path="/courses" element={<CoursePage />} />
+            <Route path="/courses/:id" element={<CourseDetail />} />
           </Routes>
         </main>
         <Footer />

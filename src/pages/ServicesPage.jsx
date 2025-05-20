@@ -79,15 +79,15 @@ const ServicesPage = () => {
     <div className="services-page">
       <section className="services-hero">
         <div className="container">
-          <div className="hero-content">
+          <div className="hero-content2">
             <h1>Медицинские сервисы нового поколения</h1>
-            <p className="subtitle">Инновационные технологии для вашего здоровья и комфорта</p>
-            <div className="stats">
-              <div className="stat-item">
+            <p className="subtitle2">Инновационные технологии для вашего здоровья и комфорта</p>
+            <div className="stats3">
+              <div className="stat-item3">
                 <span>100%</span>
                 <p>Безопасность данных</p>
               </div>
-              <div className="stat-item">
+              <div className="stat-item3">
                 <span>24/7</span>
                 <p>Доступность сервисов</p>
               </div>
@@ -121,9 +121,9 @@ const ServicesPage = () => {
           <div className="integration-section">
             <h3>Интеграция с популярными сервисами</h3>
             <div className="integration-logos">
-              <img src="/images/google-health-logo.png" alt="Google Health" />
-              <img src="/images/apple-health-logo.png" alt="Apple Health" />
-              <img src="/images/fitbit-logo.png" alt="Fitbit" />
+              <img src="../assets/google-health-logo.png" alt="Google Health" />
+              <img src="../assets/apple-health-logo.png" alt="Apple Health" />
+              <img src="../assets/fitbit-logo.png" alt="Fitbit" />
             </div>
           </div>
         </div>

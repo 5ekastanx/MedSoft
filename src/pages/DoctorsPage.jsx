@@ -61,16 +61,16 @@ const DoctorsPage = () => {
   return (
     <div className="doctors-page">
       <section className="doctors-hero">
-        <div className="container">
-          <div className="hero-content">
+        <div className="container2">
+          <div className="hero-content2">
             <h1>Наши специалисты</h1>
-            <p className="subtitle">Команда профессионалов с многолетним опытом и доказанной эффективностью</p>
-            <div className="stats">
-              <div className="stat-item">
+            <p className="subtitle2">Команда профессионалов с многолетним опытом и доказанной эффективностью</p>
+            <div className="stats2">
+              <div className="stat-item2">
                 <FaAward className="stat-icon" />
                 <span>15+ лет средний стаж</span>
               </div>
-              <div className="stat-item">
+              <div className="stat-item2">
                 <FaClinicMedical className="stat-icon" />
                 <span>5000+ довольных пациентов</span>
               </div>

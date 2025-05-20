@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaFileMedical, FaHeartbeat, FaUserMd, FaArrowRight, FaStar, FaClock } from 'react-icons/fa';
 import '../styles/pages/home.css';
+import html2pdf from 'html2pdf.js';
+
 
 // Компонент карточки курса
 const CourseCard = ({ title, duration, level, rating, image }) => {
@@ -14,7 +16,7 @@ const CourseCard = ({ title, duration, level, rating, image }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="course-image-container">
-        <img src={`/images/${image}`} alt={title} className="course-image" />
+        <img src={`../assets/${image}`} alt={title} className="course-image" />
         <div className="course-level">{level}</div>
       </div>
       <div className="course-content">
@@ -23,9 +25,11 @@ const CourseCard = ({ title, duration, level, rating, image }) => {
           <span className="course-rating"> {rating}</span>
         </div>
         <h3>{title}</h3>
-        <button className="btn btn-details">
-          Подробнее <FaArrowRight className="arrow-icon" />
-        </button>
+            <Link to="/courses/1" className="view-all">
+              <button className="btn btn-details">
+                    Подробнее <FaArrowRight className="arrow-icon" />
+              </button>
+            </Link>
       </div>
     </div>
   );
@@ -155,9 +159,20 @@ const DocumentGenerator = () => {
   };
 
   const handleDownload = () => {
-    // В реальном приложении здесь будет логика генерации PDF
-    alert('Функция скачивания PDF будет реализована позже');
+    const element = document.querySelector('.doc-content');
+    if (!element) return;
+
+    const opt = {
+      margin:       0.5,
+      filename:     `${documentType}_${documentData.patientName}.pdf`,
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2 },
+      jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().set(opt).from(element).save();
   };
+
 
   return (
     <div className="document-generator">
@@ -285,7 +300,7 @@ export const HomePage = () => {
             <h1>Профессиональное обучение первой помощи</h1>
             <p>Инновационная платформа с VR-тренажерами и сертифицированными курсами для медицинских работников</p>
             <div className="hero-actions">
-              <Link to="/courses" className="btn btn-primary">
+              <Link to="/courses" className="btn btn-primarys">
                 Начать обучение
               </Link>
               <Link to="/quiz" className="btn btn-outline">
@@ -321,7 +336,7 @@ export const HomePage = () => {
         <div className="emergency-card">
           <h3><FaHeartbeat /> Тест знаний</h3>
           <p>Пройдите тест для проверки ваших знаний по первой помощи</p>
-          <Link to="/quiz" className="btn btn-primary">
+          <Link to="/quiz" className="btn btn-primarys btn-primary">
             Начать тест
           </Link>
         </div>

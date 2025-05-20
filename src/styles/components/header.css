@@ -156,6 +156,9 @@
     transition: right 0.3s ease;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
   }
+  .nav-menu a {
+    color: white;
+}
 
   .nav-menu.open {
     right: 0;
@@ -186,6 +189,9 @@
   .logo a {
     font-size: 1.3rem;
   }
+  .nav-menu a {
+    color: white;
+}
 
   .logo-icon {
     font-size: 1.5rem;
